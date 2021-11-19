@@ -102,7 +102,7 @@ function readURL(input) {
             }
         }
         else {
-            alert("Please Choose an image with size less dhan 1MB (Prefered: 100KB-500KB");
+            alert("Please Choose an image with size less dhan 1MB (Prefered: 100KB-500KB)");
         }
     }
 }
@@ -256,7 +256,7 @@ function remove(i){
 function adminLogin(){
   var username = document.getElementById("loginid").value;
   var password = document.getElementById("loginpwd").value;
-  fetch("https://api.selvansteelhouse.in/v1/api/admin/ad/admin-login", {
+  fetch(app_endpoint+"/v1/api/admin/ad/admin-login", {
   "method": "POST",
   "headers": {
     "Content-Type": "application/json"
